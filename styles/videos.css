@@ -1,0 +1,114 @@
+@font-face {
+    font-family: Play;
+    src: url('../src/Play-Regular.ttf');
+}
+
+:root {
+    --main-bg: #131316;
+    --main-font-color: #FECD70;
+    --main-font-size: 32px;
+    --main-border-color: rgb(190, 178, 178);
+    --main-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    --main-bg-button: #301781;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+  ::-webkit-scrollbar-track {
+    background-color: #272729;
+}
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: rgb(57, 236, 117);
+    border-radius: 12px;
+}
+
+* {
+    user-select: none;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Play' ,'Courier New', Courier, monospace;
+    color: white;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding: (--scroll, 5rem);
+}
+
+body {
+    background: var(--main-bg);
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.wrapper {
+    width: 900px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+.wrapper iframe {
+    width: 100%;
+    height: 100%;
+}
+
+
+.wrapper h1, .wrapper p {
+    text-align: center;
+    letter-spacing: 1px;
+    width: 70%;
+}
+
+
+@media screen and (max-width:950px){
+    .wrapper {
+        width: 800px;
+        height: 500px;
+    }
+}
+
+@media screen and (max-width:830px){
+    .wrapper {
+        width: 700px;
+        height: 500px;
+    }
+}
+
+
+@media screen and (max-width:730px){
+    .wrapper {
+        width: 600px;
+        height: 500px;
+    }
+}
+
+@media screen and (max-width:630px){
+    .wrapper {
+        width: 500px;
+        height: 500px;
+    }
+}
+
+
+@media screen and (max-width:530px){
+    .wrapper {
+        width: 100%;
+        height: 500px;
+    }
+
+    .wrapper h1, .wrapper p {
+        width: 90%;
+    }
+}
