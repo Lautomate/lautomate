@@ -78,4 +78,5 @@ function viewVid(args) {
     args == 'sz' ? location.href = 'pages/switzpot.html' : null
     args == 'ye' ? location.href = 'pages/yogurts.html' : null
     args == 'wsi' ? location.href = 'pages/wsijobs.html' : null
+    args == 'pte' ? location.href = 'pages/jobsptoe.html' : null
 }
