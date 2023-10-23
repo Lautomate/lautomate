@@ -79,4 +79,5 @@ function viewVid(args) {
     args == 'ye' ? location.href = 'pages/yogurts.html' : null
     args == 'wsi' ? location.href = 'pages/wsijobs.html' : null
     args == 'pte' ? location.href = 'pages/jobsptoe.html' : null
+    args == 'gcs' ? location.href = 'pages/gtacs.html' : null
 }
