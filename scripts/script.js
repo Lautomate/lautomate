@@ -80,4 +80,5 @@ function viewVid(args) {
     args == 'wsi' ? location.href = 'pages/wsijobs.html' : null
     args == 'pte' ? location.href = 'pages/jobsptoe.html' : null
     args == 'gcs' ? location.href = 'pages/gtacs.html' : null
+    args == 'hsf' ? location.href = 'pages/hsf.html' : null
 }
