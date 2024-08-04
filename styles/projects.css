@@ -42,73 +42,45 @@ html {
 body {
     background: var(--main-bg);
     overflow-x: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
 }
 
 .wrapper {
-    width: 900px;
-    height: 600px;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    padding: 50px 150px 50px;
     gap: 10px;
 }
 
+.wrapper div:nth-child(1){
+    height: 600px;
+    width: 1250px;
+}
 
-.wrapper iframe {
+.wrapper iframe{
     width: 100%;
     height: 100%;
 }
 
+.wrapper div:nth-child(2){
+    width: 1250px;
+    display: flex;
+    flex-direction: column;
+}
 
-.wrapper h1, .wrapper p {
+#title {
     text-align: center;
-    letter-spacing: 1px;
-    width: 70%;
 }
 
-
-@media screen and (max-width:950px){
-    .wrapper {
-        width: 800px;
-        height: 500px;
-    }
+.wrapper .upper-bound {
+    margin-bottom: 5px;
 }
 
-@media screen and (max-width:830px){
-    .wrapper {
-        width: 700px;
-        height: 500px;
-    }
+.wrapper .description {
+    padding: 5px 0px;
 }
 
-
-@media screen and (max-width:730px){
-    .wrapper {
-        width: 600px;
-        height: 500px;
-    }
-}
-
-@media screen and (max-width:630px){
-    .wrapper {
-        width: 500px;
-        height: 500px;
-    }
-}
-
-
-@media screen and (max-width:530px){
-    .wrapper {
-        width: 100%;
-        height: 500px;
-    }
-
-    .wrapper h1, .wrapper p {
-        width: 90%;
-    }
+.wrapper .description span {
+    color: yellow;
 }

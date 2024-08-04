@@ -74,9 +74,9 @@ send_message.addEventListener('click', function(){
 });
 
 function viewVid(args) {
-    args == 'px' ? location.href = 'pages/pickxiil.html' : null
-    args == 'sz' ? location.href = 'pages/switzpot.html' : null
-    args == 'ye' ? location.href = 'pages/yogurts.html' : null
+    args == 'sp' ? location.href = 'pages/salesperf.html' : null
+    args == 'db' ? location.href = 'pages/daxbasics.html' : null
+    args == 'yl' ? location.href = 'pages/ytlibrary.html' : null
     args == 'wsi' ? location.href = 'pages/wsijobs.html' : null
     args == 'pte' ? location.href = 'pages/jobsptoe.html' : null
     args == 'gcs' ? location.href = 'pages/gtacs.html' : null
