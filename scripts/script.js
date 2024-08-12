@@ -77,8 +77,5 @@ function viewVid(args) {
     args == 'sp' ? location.href = 'pages/salesperf.html' : null
     args == 'db' ? location.href = 'pages/daxbasics.html' : null
     args == 'yl' ? location.href = 'pages/ytlibrary.html' : null
-    args == 'wsi' ? location.href = 'pages/wsijobs.html' : null
-    args == 'pte' ? location.href = 'pages/jobsptoe.html' : null
-    args == 'gcs' ? location.href = 'pages/gtacs.html' : null
-    args == 'hsf' ? location.href = 'pages/hsf.html' : null
+    args == 'wp' ? location.href = 'pages/workforceper.html' : null
 }

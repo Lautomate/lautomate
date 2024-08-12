@@ -79,6 +79,7 @@ body {
 
 .wrapper .description {
     padding: 5px 0px;
+    line-height: 25px;
 }
 
 .wrapper .description span {
