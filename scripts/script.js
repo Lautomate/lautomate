@@ -78,4 +78,5 @@ function viewVid(args) {
     args == 'db' ? location.href = 'pages/daxbasics.html' : null
     args == 'yl' ? location.href = 'pages/ytlibrary.html' : null
     args == 'wp' ? location.href = 'pages/workforceper.html' : null
+    args == 'ss' ? location.href = 'pages/superstore.html' : null
 }
