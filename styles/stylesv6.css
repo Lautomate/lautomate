@@ -468,6 +468,7 @@ body {
 .section5 .projects_container .wrap_project img{
     width: 540px;
     height: 350px;
+    
 }
 
 .section5 .projects_container .wrap_project div{
@@ -665,7 +666,7 @@ body {
     .section5 .projects_container .wrap_project img{
         width: 400px;
         height: 300px;
-        object-fit: cover;
+        object-fit: fill;
     }
 } 
 
