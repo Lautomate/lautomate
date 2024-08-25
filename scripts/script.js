@@ -79,4 +79,5 @@ function viewVid(args) {
     args == 'yl' ? location.href = 'pages/ytlibrary.html' : null
     args == 'wp' ? location.href = 'pages/workforceper.html' : null
     args == 'ss' ? location.href = 'pages/superstore.html' : null
+    args == 'sh' ? location.href = 'pages/snackaholic.html' : null
 }
