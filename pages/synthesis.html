@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv='cache-control' content='no-cache'> 
+    <meta http-equiv='expires' content='0'> 
+    <meta http-equiv='pragma' content='no-cache'>
+    <link rel="icon" href="../src/logo-icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/projects.css">
+    <title>Lautomate</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div>
+            <iframe src="https://drive.google.com/file/d/1CzcGpxrfm-wUEVb3JbIuDnV1J25NU-yg/preview" allow="autoplay" frameborder="0" allowFullScreen="true"></iframe>
+        </div>
+        <div>
+            <h1 id="title">Synthesis</h1>
+            <p id="difficulty" class="upper-bound">Level: Intermediate</p>
+            <p id="tools" class="upper-bound">Tools and Techniques: Excel, Python, and SQL</p>
+            <p id="topic" class="upper-bound">Topic: Sales Transactions</p>
+        
+            <div class="grouping">
+                <p class="group_title">NOTE</p>
+                <p class="description">
+                    Please note that this project <span>replicates the actual business scenario</span> but does not use the company's real data.
+                </p>
+            </div>
+
+            <div class="grouping">
+                <p class="group_title">GOAL</p>
+                <p class="description">
+                    This project aims to <span>reduce data entry errors</span>, enhance business operations, and provides a <span>high-granularity data</span> and modern solution that respects traditional operations.
+                </p>
+            </div>
+
+            <div class="grouping">
+                <p class="group_title">INTRODUCTION</p>
+                <p class="description">
+                    This project was undertaken to address the need for a <span>modern data management solution</span> that reduces data entry errors and enhances business operations 
+                    while respecting <span>traditional processes</span>. By leveraging SQL and Python, I developed a project that <span>simplifies data entry</span>, 
+                    ensures data integrity, and improved the data management workflow. The project involved creating SQL tables for products, shop areas, and transactions, 
+                    along with an Excel format designed for efficient data entry. A Python application was also developed to automate the process of transferring data from Excel to SQL, <span>minimizing 
+                    manual effort</span> and <span>reducing the likelihood of errors</span>. The implemented project is designed to accommodate various stakeholders, providing them with accurate and up-to-date information for decision-making.
+                </p>
+            </div>
+
+            <div class="grouping">
+                <p class="group_title">PROCESS</p>
+                <p class="description">
+                    My first step involved gathering all the requirements and identifying the necessary columns for the project. 
+                    I created a simple SQL table for products, inserting all 31 products along with their interconnected column values. Following this, 
+                    I developed a table for shop areas, <span>filling in gaps</span> to provide <span>additional context</span>, such as city, province, region, and island, 
+                    since the available data only included barangay-level information.
+                </p>
+                <p class="description">
+                    Next, I created a comprehensive transactions table that included all the essential columns, identical to those that I would later implement in Excel. 
+                    After establishing all the required tables and inputting predefined values, I designed a <span>standardized format</span> in Excel. 
+                    This format aims to minimize data entry while ensuring data integrity and accuracy. 
+                    I maximized the use of <span>data validation</span> to streamline the workflow for data entry specialists.
+                </p>
+                <p class="description">
+                    Now, let’s discuss the exciting part: I developed a Python application that reads the Excel file and pushes the data to SQL. 
+                    I utilized several powerful Python libraries for data handling, database interaction, and packaging. 
+                    As a result, data entry specialists now only need to <span>input minimal data</span> into Excel, run the standalone Python application, and have the data <span>securely stored</span> in the database.
+                </p>
+                <p class="description">
+                    I recognized that when data is pushed from Excel to SQL, the transactions table may contain incomplete information. 
+                    This is because I simplify the data entry in Excel and broke down the data into three distinct tables. 
+                    The first step in my SQL data transformation process involves modifying the Invoice No column values based on the payment method. 
+                    Since SQL does not interpret custom formats from Excel but rather the actual input, this step is crucial.
+                </p>
+                <p class="description">
+                    The second step is to check and update customer records with multiple age and/or gender entries. 
+                    Gender should have only one value per unique customer, while age serves as nominal data in the transactions table, answering the question, "How old are you?"
+                </p>
+                <p class="description">
+                    The third step also involves a check and update process where <span>data entry specialists</span> play a <span>significant role</span>. 
+                    I will <span>identify quantity pattern and outliers</span> in the data and, upon discovery, consult with the data entry specialists to verify and update the values accordingly.
+                </p>
+                <p class="description">
+                    Finally, I performed <span>SQL joins</span> on the transactions table to include all records from the Transactions table along with the matching records from the Products and Areas tables. 
+                    This data was then <span>organized into views</span>, which will serve as the <span>retrieval point for stakeholders</span> creating reports.
+                </p>
+                <p class="description">
+                    The rationale behind breaking the data into different tables and subsequently joining them is to accommodate various stakeholders engaged in different processes.
+                </p>
+            </div>
+
+            <div class="grouping">
+                <p class="group_title">LIMITATION</p>
+                <p class="description">
+                    If the user moves or renames the Excel file used for data entry, the Python application will fail to run. 
+                    This <span>dependency</span> on the specific file path and name could lead to delay in the data entry process if the file is accidentally moved or renamed.
+                </p>
+            </div>
+
+            <div class="grouping">
+                <p class="group_title">RESULT</p>
+                <p class="description">
+                    This project successfully achieved its <span>goal of reducing data entry errors and enhancing business operations</span>. 
+                    The development of SQL tables and the standardized Excel format has streamlined the data entry process, making it more efficient and accurate. 
+                    The Python application has automated the transfer of data from Excel to SQL, significantly reducing the manual effort required and minimizing the risk of errors. 
+                </p>
+            </div>
+  
+        </div>
+    </div>
+</body>
+</html>

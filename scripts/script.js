@@ -74,10 +74,6 @@ send_message.addEventListener('click', function(){
 });
 
 function viewVid(args) {
-    args == 'sp' ? location.href = 'pages/salesperf.html' : null
-    args == 'db' ? location.href = 'pages/daxbasics.html' : null
     args == 'yl' ? location.href = 'pages/ytlibrary.html' : null
-    args == 'wp' ? location.href = 'pages/workforceper.html' : null
-    args == 'ss' ? location.href = 'pages/superstore.html' : null
-    args == 'sh' ? location.href = 'pages/snackaholic.html' : null
+    args == 'sy' ? location.href = 'pages/synthesis.html' : null
 }

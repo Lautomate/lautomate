@@ -78,9 +78,18 @@ body {
     margin-bottom: 5px;
 }
 
+#topic {
+    margin-bottom: 24px;
+}
+
+.wrapper .grouping .group_title {
+    color: pink;
+    font-weight: bold;
+}
+
 .wrapper .description {
-    padding: 5px 0px;
     line-height: 25px;
+    padding-bottom: 5px;
 }
 
 .wrapper .description:last-child {
@@ -90,6 +99,7 @@ body {
 .wrapper .description span {
     color: #FECD70;
 }
+
 
 /* Lower than 1300px */
 

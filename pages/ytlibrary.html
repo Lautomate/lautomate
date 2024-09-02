@@ -20,16 +20,88 @@
             <h1 id="title">YouTube Library</h1>
             <p id="difficulty" class="upper-bound">Level: Intermediate</p>
             <p id="tools" class="upper-bound">Tools and Techniques: Python, Power BI, Power Query, Data Modeling, and DAX</p>
-            <p id="topic" class="upper-bound">Topic: YouTube</p>
-            <p class="description">
-                I developed a comprehensive YouTube project report in Power BI, leveraging Python to scrape data from <span>multiple YouTube channels</span>. 
-                The <span>Python scripts</span> are directly connected to Power BI, allowing for seamless data integration and <span>real-time updates</span>. 
-                I utilized important <span>libraries and frameworks</span> related to <span>web scraping and asynchronous retrieval</span>, ensuring the data was collected as efficiently and quickly as possible. 
+            <p id="topic" class="upper-bound">Topic: YouTube Channels</p>
+            
+            <div class="grouping">
+            <p class="group_title">NOTE</p>
+            <p class="description">This project <span>replicates an actual business scenario</span> but does not utilize the company's real data. 
+                The YouTube channel referenced in this project serves as a <span>sample</span> and should be replaced with the channels relevant to your company, 
+                such as <span>product-related channels</span>.
             </p>
-            <p class="description">
-                Additionally, I used Power Query to connect to YouTube channel feed, 
-                <span>automating the transformation and cleaning</span> processes while retaining important columns needed for data exploration and insights.
-            </p>
+            </div>
+
+            <div class="grouping">
+                <p class="group_title">GOAL</p>
+                <p class="description">
+                    The goal of this project is to create a <span>centralized view</span> that integrates data from multiple YouTube channels, 
+                    allowing users to <span>analyze and monitor</span> channel performance without the need to visit each channel individually. 
+                    By consolidating this information into a single Power BI report, the project streamlines 
+                    the process of data analysis, saving time and enabling more efficient decision-making based on real-time insights.
+                </p>
+            </div>
+
+            <div class="grouping">
+                <p class="group_title">INTRODUCTION</p>
+                <p class="description">
+                    I developed a comprehensive YouTube project in Power BI, leveraging Python to scrape data from multiple YouTube channels. 
+                    The Python scripts are <span>directly integrated</span> with Power BI, allowing for seamless <span>data integration and real-time</span> updates. 
+                    I utilized key libraries and frameworks for web scraping and asynchronous data retrieval, ensuring that the data was <span>collected efficiently and quickly</span>.
+                </p>
+            </div>
+            <div class="grouping">
+                <p class="group_title">PROCESS</p>
+                <p class="description">
+                    I began by identifying all the YouTube feed URLs for the channels included in this project. Using Power Query, 
+                    I gathered all the YouTube feed URLs and performed necessary transformations. This step was straightforward, as the feed is structured. 
+                    However, the YouTube feed <span>provides incomplete data</span>, necessitating additional methods to obtain other important information.
+                </p>
+                <p class="description">
+                    To address this, I employed Python and its libraries to expedite the process. 
+                    I imported and installed the required <span>libraries and frameworks</span>, compiling a list of all the YouTube channel URLs. 
+                    By combining <span>asyncio and aiohttp</span>, I enabled <span>concurrent requests</span> to all the specified URLs, 
+                    allowing the project to process <span>multiple requests simultaneously</span> rather than sequentially.
+                </p>
+                <p class="description">
+                    After receiving the data, I utilized Beautiful Soup to parse the HTML documents according to the criteria defined in my code. 
+                    I selected specific tags and elements to retain valuable data while discarding irrelevant information. 
+                    This library facilitated the web scraping process, making it efficient and manageable.
+                </p>
+                <p class="description">
+                    However, a significant challenge when working with various YouTube channels without using an API is the inconsistency in data structure. 
+                    To overcome this, I employed Python's Regular Expressions to match patterns, manipulate, and extract specific text accurately. 
+                    Although this step was complex, it proved rewarding once I successfully identified the patterns across different channels.
+                </p>
+                <p class="description">
+                    One of my objectives was to <span>run the script directly in Power BI</span> rather than on my local desktop. To achieve this, 
+                    I utilized the Pandas library to structure all my datasets into DataFrames, as required by Power BI. 
+                    I also included Matplotlib, even though it was not used in this project, as it is a dependency for Power BI integration.
+                </p>
+                <p class="description">
+                    After extracting data from various sources, I performed few transformations in Power Query, 
+                    including <span>merging datasets</span>, <span>replacing values</span>, and creating <span>conditional columns</span>.
+                </p>
+            </div>
+
+            <div class="grouping">
+                <p class="group_title">LIMITATION</p>
+                <p class="description">A maximum of 15 videos can be retrieved per channel.</p>
+            </div>
+
+            <div class="grouping">
+                <p class="group_title">RESULT</p>
+                <p class="description">
+                    This project <span>successfully integrated data</span> from multiple YouTube channels into Power BI, providing a comprehensive view of channel performance. 
+                    The Python scripts efficiently scraped the necessary data in <span>less than 30 seconds</span>, overcoming challenges related to inconsistent data structures across different channels.
+                </p>
+                <p class="description">
+                    The final Power BI report included key performance indicators (KPIs) such as <span>total views</span>, <span>subscriber growth</span>, <span>video engagement</span>, and <span>content performance</span> across all sampled YouTube channels. 
+                    The data visualizations provided clear and actionable insights, enabling users to understand trends and patterns in the data effectively.
+                </p>
+                <p class="description">
+                    Despite the limitation of retrieving a maximum of 15 videos per channel, the report provided a strong analysis of channel performance, 
+                    demonstrating the value of automated data collection and integration processes in a business context.
+                </p>
+            </div>
         </div>
 
     </div>
