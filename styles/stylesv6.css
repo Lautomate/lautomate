@@ -790,7 +790,7 @@ body {
 }
 
 .group2:nth-child(1) {
-    transition-delay: 0.2s;
+    transition-delay: 0.5;
 }
 
 .group2:nth-child(2) {
