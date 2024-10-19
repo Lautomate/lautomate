@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv='cache-control' content='no-cache'> 
+    <meta http-equiv='expires' content='0'> 
+    <meta http-equiv='pragma' content='no-cache'>
+    <link rel="icon" href="../src/logo-icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/projects.css">
+    <title>Lautomate</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div>
+            <iframe title="YouTube Library" src="https://app.powerbi.com/view?r=eyJrIjoiNjJkMWU1ODctMmI5YS00OWU5LWJkZTItN2FkMWRlNTA2ZmE4IiwidCI6IjBjYjc0NWI5LTE2OWYtNDgwOC05YjQxLTgzNDY5MmJmNTc2NSIsImMiOjEwfQ%3D%3D" frameborder="0" allowFullScreen="true"></iframe>
+        </div>
+        <div>
+            <h1 id="title">Beer Months</h1>
+            <p id="difficulty" class="upper-bound">Level: Easy</p>
+            <p id="tools" class="upper-bound">Tools and Techniques: Power BI, Power Query, Data Modeling, DAX, and Visualization</p>
+            <p id="topic" class="upper-bound">Topic: Sales</p>
+            
+            <div class="grouping">
+            <p class="group_title">NOTE</p>
+            <p class="description">This is a <span>real-world project</span>, but it does not use actual business data. 
+                Instead, it utilizes simulated datasets that <span>mimic typical business scenarios</span> to ensure the analysis remains relevant and practical.</span>.
+            </p>
+            </div>
+
+            <div class="grouping">
+                <p class="group_title">GOAL</p>
+                <p class="description">
+                    The goal of this project is to <span>analyze sales performance</span> using Power BI to gain insights into key metrics and trends. 
+                    By developing <span>easy-to-use</span> interactive dashboards, the project will provide actionable insights that empower stakeholders to make informed decisions. 
+                    The design emphasizes the importance of <span>appropriate colors and visuals</span>, along with simple yet effective graph titles, 
+                    so that both <span>technical and non-technical</span> viewers can understand the project effectively.
+                </p>
+            </div>
+
+            <div class="grouping">
+                <p class="group_title">INTRODUCTION</p>
+                <p class="description">
+                    Effective sales analysis is crucial for organizations aiming to optimize performance and drive growth. 
+                    This project focuses on utilizing Power BI to transform raw sales data into actionable insights. 
+                    By leveraging Power Query for data preparation and DAX (Data Analysis Expressions) for advanced calculations, 
+                    the project aims to create a seamless workflow that enhances the analysis process.
+                </p>
+                <p class="description">
+                    I developed clean, <span>interactive dashboards</span> that provide a clear overview of sales performance metrics. 
+                    These dashboards are designed to be <span>user-friendly</span>, enabling stakeholders to quickly <span>access critical information</span> without the need for extensive training.
+                </p>
+                <p class="description">
+                    Through <span>effective data modeling</span>, the project ensures that the underlying data structure is <span>robust and optimized</span> for analysis, 
+                    allowing users to explore relationships between various data points effortlessly. By integrating multiple data sources and applying best practices in 
+                    data visualization, the dashboards highlight key trends, identify opportunities for improvement, and support strategic decision-making.
+                </p>
+                <p class="description">
+                    Finally, the project demonstrates the power of careful data transformation, effective data modeling, 
+                    and appropriate visualizations in deriving specific insights that empower organizations to enhance their sales strategies and drive business success.
+                </p>
+            </div>
+            <div class="grouping">
+                <p class="group_title">PROCESS</p>
+                    <p class="description">
+                        First, I obtained the dataset and <span>investigated</span> it to <span>understand its structure and contents</span>. 
+                        I used Power Query's <span>data profiling</span> features to accelerate my data examination and analysis. 
+                        I used the Column Quality tool to determine if a column contained valid, error, or empty values; the Column Distribution tool 
+                        to identify unique and distinct values; and the Column Profile tool for a quick overview of basic statistics, especially for detecting outliers.
+                    </p>
+                    <p class="description">
+                        Tip: Renaming the fact table to a more descriptive name is beneficial for clarity regarding the data it contains.
+                    </p>
+                    <p class="description">
+                        After that, I implemented simple yet important data transformation techniques on the fact table. For example, the Customer column contained blank values, 
+                        which I replaced with "Unknown." It was essential to investigate the data beforehand, as the Gender column also had blank values. 
+                        Understanding the context allowed me to replace these with "Unknown" as well.
+                    </p>
+                    <p class="description">
+                        Next, I created a date dimension directly in Power Query whenever I encountered a date column. This is crucial because it prevents cluttering the fact table. 
+                        Additionally, the dataset contained low-level address information, specifically cities. To enhance the dataset, I researched and <span>added contextual information</span> 
+                        such as region, province, and island. I also gathered supplementary data sources, including agent information, 
+                        since each area has assigned agents based on requirements. This <span>further enriches the insights</span> derived from the current data.
+                    </p>
+                    <p class="description">
+                        After loading the data, I performed <span>data modeling</span> to improve data relationships, consistency, integrity, and retrieval speed. 
+                        This approach <span>reduces the need for complex calculations</span> while enhancing performance.
+                    </p>
+                    <p class="description">
+                        Following successful data modeling, I designed the first page, focusing on the overall sales performance. 
+                        This step is crucial as it dictates the design for subsequent pages. My main focus was to achieve <span>color harmony</span>, ensuring a visually pleasing 
+                        result for viewers and decision-makers. I then performed arithmetic operations such as DIVIDE, applied conditional functions like IF, 
+                        and used CALCULATE with iterators to achieve time intelligence metrics. 
+                        With effective data modeling, the complexity of DAX calculations was significantly reduced.
+                    </p>
+                    <p class="description">
+                        The second page emphasizes product performance. Although this page required fewer adjustments, it still highlights important metrics related to products. 
+                        For example, it maximizes the use of <span>reference lines</span> for target profits in sales and profit visuals. 
+                        Slicers were also added to allow users to filter reports by product.
+                    </p>
+                    <p class="description">
+                        The third page focuses on area performance. Since this analysis incorporates geospatial data, I utilized <span>map visuals</span>. I implemented <span>conditional formatting</span> 
+                        to <span>easily identify</span> areas that do not meet specific criteria. Consumers of the report can now easily delve into area performance, facilitating informed decision-making.
+                    </p>
+                    <p class="description">
+                        The remaining pages contain minor tweaks that still highlight important metrics for decision-makers.
+                    </p>
+            </div>
+
+            <div class="grouping">
+                <p class="group_title">LIMITATION</p>
+                <p class="description">
+                    While the simplified dataset is practical for analysis, it may not fully capture the complexities and nuances of real-world business scenarios, 
+                    potentially limiting the depth of insights derived from the analysis.
+                </p>
+            </div>
+
+            <div class="grouping">
+                <p class="group_title">RESULT</p>
+                <p class="description">
+                    This project successfully achieved its goal of <span>analyzing sales performance</span> using Power BI, resulting in <span>interactive dashboards</span> that provide clear 
+                    insights into key metrics and trends. The visuals are user-friendly, allowing stakeholders to easily navigate and access critical information, 
+                    thereby empowering them to make informed decisions. The thoughtful use of <span>colors, visuals, and graph titles</span> ensures that 
+                    both <span>technical and non-technical viewers can comprehend the report</span> effectively. 
+                    Ultimately, the project delivers actionable insights that enhance understanding of sales performance and support strategic decision-making.
+                </p>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
