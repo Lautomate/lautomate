@@ -77,4 +77,5 @@ function viewVid(args) {
     args == 'yl' ? location.href = 'pages/ytlibrary.html' : null
     args == 'sy' ? location.href = 'pages/synthesis.html' : null
     args == 'bm' ? location.href = 'pages/beermonths.html' : null
+    args == 'ai' ? location.href = 'pages/androidvsiphone.html' : null
 }
