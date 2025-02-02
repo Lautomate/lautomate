@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv='cache-control' content='no-cache'> 
+    <meta http-equiv='expires' content='0'> 
+    <meta http-equiv='pragma' content='no-cache'>
+    <link rel="icon" href="../src/logo-icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/projects.css">
+    <title>Lautomate</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div>
+            <iframe title="Call Center" src="https://app.powerbi.com/view?r=eyJrIjoiYzIzYWVmNjAtNjVhZi00YTIyLWFlMWEtOTVkNjgzZWY4NzFkIiwidCI6IjBjYjc0NWI5LTE2OWYtNDgwOC05YjQxLTgzNDY5MmJmNTc2NSIsImMiOjEwfQ%3D%3D" frameborder="0" allowFullScreen="true"></iframe>
+        </div>
+        <div>
+            <h1 id="title">Call Center</h1>
+            <p id="difficulty" class="upper-bound">Level: Easy</p>
+            <p id="tools" class="upper-bound">Tools and Techniques: Power Query, Data Cleaning, Data Modeling, Power BI, and Storytelling</p>
+            <p id="topic" class="upper-bound">Topic: Call Center Performance</p>
+            
+            <div class="grouping">
+            <p class="group_title">NOTE</p>
+            <p class="description">
+                The dataset used in this project was <span>sourced from Medium</span> by K S Ashish. Although the data was <span>modified</span>, it does not affect the original state of the dataset.
+            </p>
+            </div>
+
+            <div class="grouping">
+                <p class="group_title">GOAL</p>
+                <p class="description">
+                    The goal of this project is to <span>improve the call center data analysis</span> originally performed in Excel by K S Ashish. 
+                    It will tackle historical data and provide insights in a clear way.
+                </p>
+            </div>
+
+            <div class="grouping">
+                <p class="group_title">INTRODUCTION</p>
+                <p class="description">
+                    I have always been fascinated and curious about what it is like to be a data analyst in the BPO industry. 
+                    I researched possible datasets, questions, and analyses, and found that in-house data is most likely the dataset used in this industry. 
+                    Fortunately, I came across a Medium post where the author provided a downloadable dataset. 
+                    The post is considered a case study that explores the data, develops an argument, and offers excellent insights and recommendations.
+                </p>
+                <p class="description">
+                    At the end of this writing, you will see that I <span>developed a Power BI project</span> analyzing the improved data, delivering more impactful insights while 
+                    demonstrating my <span>abilities to enhance</span> previous projects.
+                </p>
+            </div>
+            <div class="grouping">
+                <p class="group_title">PROCESS</p>
+                <p class="description">
+                    The first step I took was to load the data in Power Query to clean and transform the <span>semi-clean</span> data. 
+                    I <span>removed unnecessary columns</span> while ensuring that the removed columns <span>did not affect</span> the analysis. 
+                    I then performed my favorite text cleaning and transformation techniques, namely trimming, cleaning, and replacing double spaces with single space values. 
+                    The area column contains both the city and its abbreviation; therefore, I replaced it using the replace value technique in one step. 
+                    I also adjusted the call time column to reflect the relevant year and month for this project.
+                </p>
+                <p class="description">
+                    Before loading the data, I <span>further investigated</span> using the <span>column profiling</span> feature in Power BI to give me an overview of the dataset. 
+                    One discovery was the granularity of the date, which is daily. To address this, I created a simple date dimension table to cater time-series demands. 
+                    After this, it was time to load the data and perform the visualization.
+                </p>
+                <p class="description">
+                    The dashboard page displays almost the same metrics as those in the article, with <span>slight tweaks</span> in the <span>design</span> aspects and <span>insights</span>.
+                </p>
+
+            </div>
+
+            <div class="grouping">
+                <p class="group_title">LIMITATION</p>
+                <p class="description">The dataset only contains one month of data, limiting the ability to perform month-on-month or quarterly analyses.</p>
+            </div>
+
+            <div class="grouping">
+                <p class="group_title">RESULT</p>
+                <p class="description">
+                    The results of this project reveal that <span>values are consistent</span> throughout the month, with <span>little to no changes</span> in the KPIs and metrics. 
+                    This suggests that management or decision-makers should consider improving strategies or interventions to enhance performance.
+                </p>
+                <p class="description">
+                    The analysis presents information in a <span>clear and understandable</span> manner, using appropriate visuals to either <span>break down</span> or <span>aggregate</span> values. 
+                    This approach enhances the communication of insights and supports better decision-making, particularly in tracking business performance based on the available customer data.
+                </p>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
