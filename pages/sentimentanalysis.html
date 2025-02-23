@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv='cache-control' content='no-cache'> 
+    <meta http-equiv='expires' content='0'> 
+    <meta http-equiv='pragma' content='no-cache'>
+    <link rel="icon" href="../src/logo-icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/projects.css">
+    <title>Lautomate</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div>
+            <iframe title="YouTube Library" src="https://app.powerbi.com/view?r=eyJrIjoiOGNlZTU3MjctMWViYS00YmEwLTlmYzUtNGJkNjY3YjUyMTQ1IiwidCI6IjBjYjc0NWI5LTE2OWYtNDgwOC05YjQxLTgzNDY5MmJmNTc2NSIsImMiOjEwfQ%3D%3D" frameborder="0" allowFullScreen="true"></iframe>
+        </div>
+        <div>
+            <h1 id="title">Sentiment Analysis</h1>
+            <p id="difficulty" class="upper-bound">Level: Intermediate</p>
+            <p id="tools" class="upper-bound">Tools and Techniques: Python, Power BI, and DAX</p>
+            <p id="topic" class="upper-bound">Topic: Sentiment</p>
+        
+            <div class="grouping">
+                <p class="group_title">NOTE</p>
+                <p class="description">
+                    The dataset used in this project was created by me and <span>replicates actual sentiment analysis</span> in the real world. 
+                    New data is <span>updated regularly</span> up to the end of the year.
+                </p>
+            </div>
+
+            <div class="grouping">
+                <p class="group_title">GOAL</p>
+                <p class="description">
+                    The goal of this project is to extract emotions from text, whether <span>positive</span>, <span>negative</span>, or <span>neutral</span>, using Python and visualize it in Power BI. 
+                    This makes it easy for businesses to understand <span>user perceptions</span> of their products.
+                </p>
+            </div>
+
+            <div class="grouping">
+                <p class="group_title">INTRODUCTION</p>
+                <p class="description">
+                    Texts provide a <span>rich source of qualitative information</span> in data analysis, revealing hidden insights such as opinions, emotions, and sentiments.
+                     By creating a sentiment analysis, businesses can improve products, enhance brand reputation, and strengthen customer relations.
+                </p>
+                <p class="description">
+                    Through the proper use of tools like VADER Sentiment and Power BI to visualize the results, 
+                    I delivered a <span>full-scale project</span> that positions businesses to better understand how they approach their customers based on customer sentiments.
+                </p>
+            </div>
+
+            <div class="grouping">
+                <p class="group_title">PROCESS</p>
+                <p class="description">
+                        The first step I took was to scan the dataset. I found that not all text was written in English; it included <span>different languages</span> from various users. 
+                        The VADER Sentiment tool only accepts English text, and manually translating non-English text was not feasible as it counters the motive of automation. 
+                        Therefore, I used a Python library called googleTrans to <span>detect and translate non-English</span> text into English. 
+                        Given the dataset's size, I utilized <span>asynchronous methods</span> to handle the large volume of translations, along with filtering techniques to translate only non-English texts.
+                </p>
+                <p class="description">
+                    Some texts involved <span>irony</span>, <span>sarcasm</span>, or <span>dialects</span> that are difficult to translate into English, which <span>posed challenges</span> for the tool. 
+                    To address these elements, I created a <span>custom sentiment extension</span> using Python lists. 
+                    I then tested the results to ensure that the texts were accurately tagged as positive, negative, or neutral.
+                </p>
+                <p class="description">
+                    Finally, I loaded the data to perform visualization and add necessary DAX elements in order to showcase the results.
+                </p>
+            </div>
+
+            <div class="grouping">
+                <p class="group_title">LIMITATION</p>
+                <p class="description">
+                    Some idiomatic expressions, sarcasm, and cultural references may not be accurately captured by the sentiment analysis, 
+                    even with the custom sentiment extension I created, as the growing volume of data makes it challenging to handle and may lead to misclassification of sentiments.
+                </p>
+            </div>
+
+            <div class="grouping">
+                <p class="group_title">RESULT</p>
+                <p class="description">
+                    The sentiment analysis <span>revealed</span> valuable insights into <span>customer perceptions</span>, providing a clear breakdown of positive, negative, and neutral sentiments. 
+                    Visualizations in Power BI highlighted <span>trends and patterns</span>, allowing stakeholders to identify areas for improvement and better understand user feedback. 
+                    Overall, the project successfully demonstrated the potential of sentiment analysis in enhancing business strategies and customer relations.
+                </p>
+            </div>
+  
+        </div>
+    </div>
+</body>
+</html>
