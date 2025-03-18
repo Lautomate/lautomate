@@ -79,4 +79,5 @@ function viewVid(args) {
     args == 'bm' ? location.href = 'pages/beermonths.html' : null
     args == 'ai' ? location.href = 'pages/androidvsiphone.html' : null
     args == 'cc' ? location.href = 'pages/callcenter.html' : null
+    args == 'pf' ? location.href = 'pages/projectfire.html' : null
 }
